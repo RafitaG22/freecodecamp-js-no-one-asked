@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>No One Asked</title>
+    <meta name="author" content="Elmar Chavez" />
+    <meta
+      name="description"
+      content="No One Asked is an interactive random advice generator site in which the user can copy and share on Twitter. Inspired from the favorite icon toggler lab challenge from freeCodeCamp.org. Built during the author's fifth month learning frontend web development using HTML, CSS, and JavaScript. "
+    />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/icons/favicon-16x16.png"
+    />
+    <link rel="apple-touch-icon" href="./assets/icons/apple-touch-icon.png" />
+    <meta property="og:site_name" content="CodingWithJiro" />
+    <meta property="og:title" content="No One Asked" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="No One Asked is a random advice generator where users can copy and share quotes. Built with HTML, CSS, and JavaScript during the author's fifth month of learning frontend development. Inspired by freeCodeCamp's favorite icon toggler lab challenge."
+    />
+    <meta
+      property="og:url"
+      content="https://no-one-asked-fcc-jiro.netlify.app/"
+    />
+    <meta
+      property="og:image"
+      content="https://no-one-asked-fcc-jiro.netlify.app/assets/img/site-preview-meta-dark_1200x630.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="No One Asked" />
+    <meta
+      name="twitter:description"
+      content="Get random advice, copy it, or share it in a click. Built during month 5 of my #FrontendDev journey. Inspired by a #freeCodeCamp favorite icon toggler lab challenge. #NoOneAsked"
+    />
+    <meta
+      name="twitter:image"
+      content="https://no-one-asked-fcc-jiro.netlify.app/assets/img/site-preview-meta-dark_1200x630.png"
+    />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#00120c"
+      media="(prefers-color-scheme: dark)"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://no-one-asked-fcc-jiro.netlify.app/" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body class="body">
+    <div class="body__wrapper">
+      <header class="header">
+        <div class="header__container container">
+          <a
+            class="header__skip sr-only"
+            href="#main"
+            aria-label="Skip to main content"
+          >
+            Go directly to the main content of the page.
+          </a>
+
+          <div class="theme">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="theme__icon theme__icon--light"
+              aria-hidden="true"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g clip-path="url(#a)" fill="currentColor">
+                  <path
+                    d="M12 0a1 1 0 0 1 1 1v4a1 1 0 1 1-2 0V1a1 1 0 0 1 1-1ZM4.929 3.515a1 1 0 0 0-1.414 1.414l2.828 2.828a1 1 0 0 0 1.414-1.414L4.93 3.515ZM1 11a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2H1ZM18 12a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2h-4a1 1 0 0 1-1-1ZM17.657 16.243a1 1 0 0 0-1.414 1.414l2.828 2.828a1 1 0 1 0 1.414-1.414l-2.828-2.828ZM7.757 17.657a1 1 0 1 0-1.414-1.414L3.515 19.07a1 1 0 1 0 1.414 1.414l2.828-2.828ZM20.485 4.929a1 1 0 0 0-1.414-1.414l-2.828 2.828a1 1 0 1 0 1.414 1.414l2.828-2.828ZM13 19a1 1 0 1 0-2 0v4a1 1 0 1 0 2 0v-4ZM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Z"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#ffffff" d="M0 0h24v24H0z"></path>
+                  </clipPath>
+                </defs>
+              </g>
+            </svg>
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="theme__icon theme__icon--dark hidden"
+              aria-hidden="true"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M9.272 2.406a1 1 0 0 0-1.23-1.355C6.59 1.535 5.432 2.487 4.37 3.55a11.399 11.399 0 0 0 0 16.182c4.518 4.519 11.51 4.261 15.976-.205 1.062-1.062 2.014-2.22 2.498-3.673A1 1 0 0 0 21.55 14.6c-3.59 1.322-7.675.734-10.434-2.025-2.765-2.766-3.328-6.83-1.844-10.168Z"
+                  fill="currentColor"
+                ></path>
+              </g>
+            </svg>
+
+            <button
+              type="button"
+              aria-label="Toggle Light/Dark Mode"
+              aria-pressed="false"
+              class="theme__button"
+            ></button>
+          </div>
+
+          <h1 class="header__title">No One Asked</h1>
+
+          <p class="header__subtitle">It's okay, you don't have to take it</p>
+        </div>
+      </header>
+
+      <main class="main" id="main">
+        <div class="main__container container">
+          <section class="main__advice-card">
+            <p class="main__advice">Click to get some advice</p>
+
+            <div class="main__buttons">
+              <button
+                type="button"
+                class="main__button main__button--get-advice"
+              >
+                Get Advice
+              </button>
+
+              <button
+                type="button"
+                class="main__button main__button--add-to-favorites"
+                aria-pressed="false"
+                disabled
+              >
+                <span class="main__heart-icon">♡</span> Add to Favorites
+              </button>
+
+              <button class="main__button main__button--see-favorites">
+                See Favorites
+              </button>
+            </div>
+
+            <svg
+              width="114"
+              height="81"
+              viewBox="0 0 114 81"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="main__advice-card-bg"
+            >
+              <path
+                opacity="0.1"
+                d="M113.147 24.3C113.147 36.45 110.489 47.5875 105.173 57.7125C99.8578 67.8375 92.0109 75.5578 81.6328 80.8735L68.7234 70.2422C74.5453 68.2172 79.6078 63.7875 83.9109 56.9531C88.9734 49.8656 91.5047 43.411 91.5047 37.5891H66.825V0H113.147V24.3ZM46.3219 24.3C46.3219 36.1969 43.5375 47.5875 37.9688 58.4719C32.1469 69.3563 24.4266 76.8234 14.8078 80.8735L1.89844 70.2422C7.72031 68.2172 12.7828 63.7875 17.0859 56.9531C22.1484 49.8656 24.6797 43.411 24.6797 37.5891H0V0H46.3219V24.3Z"
+                fill="#00F39C"
+              />
+            </svg>
+          </section>
+
+          <dialog
+            class="main__dialog"
+            aria-labelledby="dialog-title"
+            aria-modal="true"
+          >
+            <form method="dialog" class="main__form">
+              <button type="submit" class="main__close">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="40px"
+                  viewBox="0 -960 960 960"
+                  width="40px"
+                  fill="currentColor"
+                  class="main__close-icon"
+                >
+                  <path
+                    d="m336-280-56-56 144-144-144-143 56-56 144 144 143-144 56 56-144 143 144 144-56 56-143-144-144 144Z"
+                  />
+                </svg>
+              </button>
+            </form>
+
+            <div class="main__dialog-content">
+              <h2 class="main__favorites-title" id="dialog-title">
+                Favorite Advices
+              </h2>
+
+              <ul class="main__favorites">
+                <li class="main__list">
+                  <p class="main__list-content">❝LOREM IPSUM.❞</p>
+
+                  <div class="main__list-buttons">
+                    <a
+                      href="https://twitter.com/intent/tweet?text=❝Share positive energy.❞"
+                      class="main__list-button main__list-button--twitter"
+                      aria-label="Share advice to twitter."
+                      title="Tweet"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        x="0px"
+                        y="0px"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 50 50"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M 11 4 C 7.1456661 4 4 7.1456661 4 11 L 4 39 C 4 42.854334 7.1456661 46 11 46 L 39 46 C 42.854334 46 46 42.854334 46 39 L 46 11 C 46 7.1456661 42.854334 4 39 4 L 11 4 z M 11 6 L 39 6 C 41.773666 6 44 8.2263339 44 11 L 44 39 C 44 41.773666 41.773666 44 39 44 L 11 44 C 8.2263339 44 6 41.773666 6 39 L 6 11 C 6 8.2263339 8.2263339 6 11 6 z M 13.085938 13 L 22.308594 26.103516 L 13 37 L 15.5 37 L 23.4375 27.707031 L 29.976562 37 L 37.914062 37 L 27.789062 22.613281 L 36 13 L 33.5 13 L 26.660156 21.009766 L 21.023438 13 L 13.085938 13 z M 16.914062 15 L 19.978516 15 L 34.085938 35 L 31.021484 35 L 16.914062 15 z"
+                        ></path>
+                      </svg>
+                    </a>
+
+                    <button
+                      type="button"
+                      class="main__list-button main__list-button--copy"
+                      aria-label="Copy current advice to clipboard"
+                      title="Copy"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24px"
+                        viewBox="0 -960 960 960"
+                        width="24px"
+                        fill="currentColor"
+                        class="main__copy-icon"
+                      >
+                        <path
+                          d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"
+                        />
+                      </svg>
+
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24px"
+                        viewBox="0 -960 960 960"
+                        width="24px"
+                        fill="currentColor"
+                        class="main__copy-icon"
+                      >
+                        <path
+                          d="m438-240 226-226-58-58-169 169-84-84-57 57 142 142ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"
+                        />
+                      </svg>
+                    </button>
+
+                    <button
+                      type="button"
+                      class="main__list-button main__list-button--delete"
+                      aria-label="Remove current advice from favorites"
+                      title="Remove"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24px"
+                        viewBox="0 -960 960 960"
+                        width="24px"
+                        fill="currentColor"
+                        class="main__delete-icon"
+                      >
+                        <path
+                          d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <span class="main__dialog-dummy" tabindex="0" autofocus></span>
+          </dialog>
+
+          <div
+            class="main__announcement sr-only"
+            role="status"
+            aria-live="polite"
+          ></div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <p class="footer__p">
+          Powered by
+          <a
+            href="https://api.adviceslip.com/"
+            target="_blank"
+            title="Go to AdviceSlipAPI's webpage"
+            class="footer__link"
+            >AdviceSlipAPI</a
+          >
+        </p>
+      </footer>
+    </div>
+
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
