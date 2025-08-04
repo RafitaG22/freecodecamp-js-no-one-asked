@@ -18,6 +18,7 @@
 ![Dynamic Content](https://img.shields.io/badge/Dynamic%20Content-Available-673ab7?style=for-the-badge)
 [![Google Lighthouse](https://img.shields.io/badge/Lighthouse-Audit-00B0FF?style=for-the-badge&logo=lighthouse&logoColor=white)](./assets/downloads/lighthouse-performance-report.pdf)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7320ccce-660c-4794-9c5c-f01da0ce31ca/deploy-status)](https://no-one-asked-fcc-jiro.netlify.app/)
 ![Status](https://img.shields.io/badge/status-complete-brightgreen)
 ![Learning Path](https://img.shields.io/badge/learning%20path-month%205-blue)
 ![Views](https://visitor-badge.laobi.icu/badge?page_id=CodingWithJiro.freecodecamp-js-no-one-asked&left_text=repo%20views)
@@ -29,7 +30,7 @@
 | ![Mobile](./assets/img/site-preview-mobile-dark_375x812.png) | ![Desktop](./assets/img/site-preview-desktop-dark_1440x960.png) |
 | ![Mobile](./assets/img/site-preview-mobile_375x812.png)      | ![Desktop](./assets/img/site-preview-desktop_1440x960.png)      |
 
-This project is a random advice generator powered by the [Advice Slip API](https://api.adviceslip.com/) where users can click the floating button to fetch humorous or thoughtful advice, styled in a sleek modern UI with responsive layout, theme toggle support, and dynamic transitions.
+This project is a random advice generator powered by the **[Advice Slip API](https://api.adviceslip.com/)** where users can click the floating button to fetch humorous or thoughtful advice, styled in a sleek modern UI with responsive layout, theme toggle support, and dynamic transitions.
 
 Created and inspired from the favorite icon toggler lab challenge of the [**freeCodeCamp.org**](https://www.freecodecamp.org/learn/full-stack-developer/) JavaScript course.
 
@@ -37,7 +38,7 @@ Created and inspired from the favorite icon toggler lab challenge of the [**free
 
 ## 🔍 Overview
 
-This web app fetches and displays random advice using the [Advice Slip API](https://api.adviceslip.com/). The interface is minimalistic yet dynamic and is centered around a group of interactive buttons and an advice card that refreshes on click.
+This web app fetches and displays random advice using the **[Advice Slip API](https://api.adviceslip.com/)**. The interface is minimalistic yet dynamic and is centered around a group of interactive buttons and an advice card that refreshes on click.
 
 The site also saves the user's favorites via dynamic updates in their browser's `localStorage` whenever they get advice, add it to favorites or even when they just want to see the list of their favorite advices. These saved favorites can also be shared on Twitter, copied, and even removed from the favorite list.
 
@@ -95,7 +96,7 @@ The site also saves the user's favorites via dynamic updates in their browser's 
 
 ## 🌐 Live Demo
 
-Or you can check out the 👉 [live website here](LINK)
+Or you can check out the 👉 [live website here](https://no-one-asked-fcc-jiro.netlify.app/)
 
 ---
 
@@ -112,10 +113,3 @@ Created by **Elmar Chavez**
 🗓️ Month/Year: **August 2025**
 
 📚 Journey: **5<sup>th</sup>** month of learning _frontend web development_.
-
-<!--
-
-FREECODECAMP TAGS:
-html css javascript vscode git github netlify 4th-month freecodecamp project lighthouse theme-toggle fcc-js fetch-api
-
--->
